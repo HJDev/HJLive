@@ -1,6 +1,6 @@
 # HJLive
 
-[![CI Status](http://img.shields.io/travis/HeJun/HJLive.svg?style=flat)](https://travis-ci.org/HeJun/HJLive)
+[![CI Status](http://img.shields.io/travis/HJDev/HJLive.svg?style=flat)](https://travis-ci.org/HeJun/HJLive)
 [![Version](https://img.shields.io/cocoapods/v/HJLive.svg?style=flat)](http://cocoapods.org/pods/HJLive)
 [![License](https://img.shields.io/cocoapods/l/HJLive.svg?style=flat)](http://cocoapods.org/pods/HJLive)
 [![Platform](https://img.shields.io/cocoapods/p/HJLive.svg?style=flat)](http://cocoapods.org/pods/HJLive)
