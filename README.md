@@ -22,7 +22,7 @@ pod "HJLive"
 
 ## Author
 
-HeJun, mail@hejun.org
+HeJun, https://www.teamleader.cn
 
 ## License
 
