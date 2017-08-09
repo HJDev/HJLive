@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HJLive_Example' do
+  pod 'HJLive', :path => '../'
+
+  target 'HJLive_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
