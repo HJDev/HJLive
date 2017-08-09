@@ -1,0 +1,16 @@
+PODS:
+  - HJLive (0.1.0)
+
+DEPENDENCIES:
+  - HJLive (from `../`)
+
+EXTERNAL SOURCES:
+  HJLive:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HJLive: bbdbfd3e16a5af2518f1fe0d6deaefb313d8a8da
+
+PODFILE CHECKSUM: 77959db4402faf70f03651756e7ac24c8b6210ea
+
+COCOAPODS: 1.2.1

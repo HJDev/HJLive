@@ -1,0 +1,6 @@
+framework module HJLive {
+  umbrella header "HJLive-umbrella.h"
+
+  export *
+  module * { export * }
+}

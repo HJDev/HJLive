@@ -1,0 +1,22 @@
+{
+  "name": "HJLive",
+  "version": "0.1.0",
+  "summary": "A short description of HJLive.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/HeJun/HJLive",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HeJun": "mail@hejun.org"
+  },
+  "source": {
+    "git": "https://github.com/HeJun/HJLive.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HJLive/Classes/**/*"
+}
