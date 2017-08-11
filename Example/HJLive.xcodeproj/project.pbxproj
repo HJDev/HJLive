@@ -22,6 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		79AC2E8E1F3DA6170081387E /* HJRTMPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */; };
+		79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E901F3DA9510081387E /* HJBufferFrame.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9BC4634506C3406BDC966C42 /* Pods_HJLive_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3509191C3175F6C570D71 /* Pods_HJLive_Example.framework */; };
 /* End PBXBuildFile section */
@@ -39,8 +41,8 @@
 /* Begin PBXFileReference section */
 		0562BC203B14BF6F3D235858 /* Pods-HJLive_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJLive_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJLive_Tests/Pods-HJLive_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3F5E57C2ED27C00E71B4D91B /* Pods-HJLive_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJLive_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJLive_Tests/Pods-HJLive_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4A780711DD330EFD5B431A72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		53DF9B17D8B8C5DD0CEC3191 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4A780711DD330EFD5B431A72 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		53DF9B17D8B8C5DD0CEC3191 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HJLive_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJLive_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +64,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		608AC8FEB0CC57FF1C9D7DF1 /* Pods-HJLive_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJLive_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJLive_Example/Pods-HJLive_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79AC2E8C1F3DA6170081387E /* HJRTMPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRTMPSession.h; sourceTree = "<group>"; };
+		79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRTMPSession.m; sourceTree = "<group>"; };
+		79AC2E8F1F3DA9510081387E /* HJBufferFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBufferFrame.h; sourceTree = "<group>"; };
+		79AC2E901F3DA9510081387E /* HJBufferFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBufferFrame.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		90A7FAE792DA8B09E6F3518A /* HJLive.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HJLive.podspec; path = ../HJLive.podspec; sourceTree = "<group>"; };
+		90A7FAE792DA8B09E6F3518A /* HJLive.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HJLive.podspec; path = ../HJLive.podspec; sourceTree = "<group>"; };
 		D0D99E154F377E5725A6280A /* Pods_HJLive_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJLive_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E3509191C3175F6C570D71 /* Pods_HJLive_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HJLive_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4EC66B75E3B104E6C94F06 /* Pods-HJLive_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJLive_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJLive_Example/Pods-HJLive_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		6003F593195388D20070C39A /* Example for HJLive */ = {
 			isa = PBXGroup;
 			children = (
+				79AC2E8B1F3DA50F0081387E /* HJLiveKit */,
 				6003F59C195388D20070C39A /* HJAppDelegate.h */,
 				6003F59D195388D20070C39A /* HJAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +201,41 @@
 				4A780711DD330EFD5B431A72 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		79AC2E881F3DA4CB0081387E /* RTMP */ = {
+			isa = PBXGroup;
+			children = (
+				79AC2E8C1F3DA6170081387E /* HJRTMPSession.h */,
+				79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */,
+				79AC2E8F1F3DA9510081387E /* HJBufferFrame.h */,
+				79AC2E901F3DA9510081387E /* HJBufferFrame.m */,
+			);
+			path = RTMP;
+			sourceTree = "<group>";
+		};
+		79AC2E891F3DA4D80081387E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		79AC2E8A1F3DA4DF0081387E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		79AC2E8B1F3DA50F0081387E /* HJLiveKit */ = {
+			isa = PBXGroup;
+			children = (
+				79AC2E8A1F3DA4DF0081387E /* Audio */,
+				79AC2E891F3DA4D80081387E /* Video */,
+				79AC2E881F3DA4CB0081387E /* RTMP */,
+			);
+			path = HJLiveKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +292,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = HeJun;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = UVTAS8R4A5;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -397,6 +442,8 @@
 				6003F59E195388D20070C39A /* HJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				79AC2E8E1F3DA6170081387E /* HJRTMPSession.m in Sources */,
+				79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +571,7 @@
 			baseConfigurationReference = 608AC8FEB0CC57FF1C9D7DF1 /* Pods-HJLive_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVTAS8R4A5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HJLive/HJLive-Prefix.pch";
 				INFOPLIST_FILE = "HJLive/HJLive-Info.plist";
@@ -539,6 +587,7 @@
 			baseConfigurationReference = FC4EC66B75E3B104E6C94F06 /* Pods-HJLive_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVTAS8R4A5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HJLive/HJLive-Prefix.pch";
 				INFOPLIST_FILE = "HJLive/HJLive-Info.plist";

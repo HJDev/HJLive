@@ -14,3 +14,18 @@
     @import UIKit;
     @import Foundation;
 #endif
+
+/** LOG */
+#ifdef DEBUG
+	#ifndef HJLog
+		#define HJLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+	#endif
+	#else
+	#ifndef HJLog
+		#define HJLog(...)
+	#endif
+#endif
+
+/** Weak & Strong */
+#define HJWeakSelf __weak __typeof(&*self)weakSelf = self
+#define HJStrongSelf __strong __typeof(&*self)strongSelf = weakSelf
