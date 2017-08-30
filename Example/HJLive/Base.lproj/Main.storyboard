@@ -39,6 +39,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="W5m-fT-jDq">
+                        <barButtonItem key="leftBarButtonItem" title="断开连接" id="Byr-I9-ZAa">
+                            <connections>
+                                <action selector="disConnect:" destination="QOE-k5-wfI" id="aNi-d1-Wa5"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="开始连接" id="0mf-yZ-0AN">
                             <connections>
                                 <action selector="startConnect:" destination="QOE-k5-wfI" id="V39-fm-HUj"/>

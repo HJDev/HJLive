@@ -7,12 +7,14 @@
 //
 
 #import "HJViewController.h"
-#import "HJRTMPSession.h"
+#import "HJLiveManager.h"
 
-@interface HJViewController ()<HJRTMPSessionDelegate>
+@interface HJViewController ()
 
+@property (nonatomic, strong) HJLiveManager *manager;
 /** 连接服务器 */
 - (IBAction)startConnect:(id)sender;
+- (IBAction)disConnect:(id)sender;
 
 @end
 
@@ -31,13 +33,18 @@
 }
 
 - (IBAction)startConnect:(id)sender {
-	HJRTMPSession *session = [HJRTMPSession defaultSession];
-	session.delegate = self;
-	[session connectWithUrl:[NSURL URLWithString:@"rtmp://192.168.1.253/rtmplive/aaa"]];
+	
+	HJLiveManager *manager = [HJLiveManager defaultManager];
+	[manager setLiveStatusChangedBlock:^(HJLiveStatus liveStatus) {
+		HJLog(@"liveStatus : %ld", liveStatus);
+	}];
+	manager.rtmpUrl = [NSURL URLWithString:@"rtmp://192.168.1.253:1935/rtmplive/aaa"];
+	[manager start];
+	self.manager = manager;
 }
 
-#pragma mark - delegate
-- (void)session:(HJRTMPSession *)session withStatus:(HJRTMPSessionStatus)status {
-	HJLog(@"%@", session);
+- (IBAction)disConnect:(id)sender {
+	self.manager = nil;
 }
+
 @end

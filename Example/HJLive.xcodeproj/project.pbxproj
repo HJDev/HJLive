@@ -22,7 +22,13 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		79AC2E8E1F3DA6170081387E /* HJRTMPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */; };
+		7967F5DF1F566B7A00661E61 /* HJLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5DE1F566B7A00661E61 /* HJLiveManager.m */; };
+		7967F5E21F566EEB00661E61 /* HJAudioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5E11F566EEB00661E61 /* HJAudioConfig.m */; };
+		7967F5E51F566EFA00661E61 /* HJVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5E41F566EFA00661E61 /* HJVideoConfig.m */; };
+		7967F5E81F567E7B00661E61 /* HJRtmpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5E71F567E7B00661E61 /* HJRtmpConfig.m */; };
+		7967F5EB1F5692D000661E61 /* HJSrteamSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5EA1F5692D000661E61 /* HJSrteamSession.m */; };
+		7967F5F01F56B8CB00661E61 /* NSMutableData+Buffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */; };
+		79AC2E8E1F3DA6170081387E /* HJRtmpSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E8D1F3DA6170081387E /* HJRtmpSession.m */; };
 		79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E901F3DA9510081387E /* HJBufferFrame.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9BC4634506C3406BDC966C42 /* Pods_HJLive_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E3509191C3175F6C570D71 /* Pods_HJLive_Example.framework */; };
@@ -64,8 +70,21 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		608AC8FEB0CC57FF1C9D7DF1 /* Pods-HJLive_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJLive_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJLive_Example/Pods-HJLive_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79AC2E8C1F3DA6170081387E /* HJRTMPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRTMPSession.h; sourceTree = "<group>"; };
-		79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRTMPSession.m; sourceTree = "<group>"; };
+		7967F5DD1F566B7A00661E61 /* HJLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJLiveManager.h; sourceTree = "<group>"; };
+		7967F5DE1F566B7A00661E61 /* HJLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJLiveManager.m; sourceTree = "<group>"; };
+		7967F5E01F566EEB00661E61 /* HJAudioConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAudioConfig.h; sourceTree = "<group>"; };
+		7967F5E11F566EEB00661E61 /* HJAudioConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAudioConfig.m; sourceTree = "<group>"; };
+		7967F5E31F566EFA00661E61 /* HJVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJVideoConfig.h; sourceTree = "<group>"; };
+		7967F5E41F566EFA00661E61 /* HJVideoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJVideoConfig.m; sourceTree = "<group>"; };
+		7967F5E61F567E7B00661E61 /* HJRtmpConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRtmpConfig.h; sourceTree = "<group>"; };
+		7967F5E71F567E7B00661E61 /* HJRtmpConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRtmpConfig.m; sourceTree = "<group>"; };
+		7967F5E91F5692D000661E61 /* HJStreamSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJStreamSession.h; sourceTree = "<group>"; };
+		7967F5EA1F5692D000661E61 /* HJSrteamSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJSrteamSession.m; sourceTree = "<group>"; };
+		7967F5EC1F56B4B800661E61 /* HJRtmpTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJRtmpTypes.h; sourceTree = "<group>"; };
+		7967F5EE1F56B8CB00661E61 /* NSMutableData+Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Buffer.h"; sourceTree = "<group>"; };
+		7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Buffer.m"; sourceTree = "<group>"; };
+		79AC2E8C1F3DA6170081387E /* HJRtmpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRtmpSession.h; sourceTree = "<group>"; };
+		79AC2E8D1F3DA6170081387E /* HJRtmpSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRtmpSession.m; sourceTree = "<group>"; };
 		79AC2E8F1F3DA9510081387E /* HJBufferFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBufferFrame.h; sourceTree = "<group>"; };
 		79AC2E901F3DA9510081387E /* HJBufferFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBufferFrame.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,13 +222,36 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		7967F5DC1F566B4B00661E61 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7967F5DD1F566B7A00661E61 /* HJLiveManager.h */,
+				7967F5DE1F566B7A00661E61 /* HJLiveManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7967F5ED1F56B81A00661E61 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7967F5EE1F56B8CB00661E61 /* NSMutableData+Buffer.h */,
+				7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		79AC2E881F3DA4CB0081387E /* RTMP */ = {
 			isa = PBXGroup;
 			children = (
-				79AC2E8C1F3DA6170081387E /* HJRTMPSession.h */,
-				79AC2E8D1F3DA6170081387E /* HJRTMPSession.m */,
+				79AC2E8C1F3DA6170081387E /* HJRtmpSession.h */,
+				79AC2E8D1F3DA6170081387E /* HJRtmpSession.m */,
+				7967F5E91F5692D000661E61 /* HJStreamSession.h */,
+				7967F5EA1F5692D000661E61 /* HJSrteamSession.m */,
 				79AC2E8F1F3DA9510081387E /* HJBufferFrame.h */,
 				79AC2E901F3DA9510081387E /* HJBufferFrame.m */,
+				7967F5E61F567E7B00661E61 /* HJRtmpConfig.h */,
+				7967F5E71F567E7B00661E61 /* HJRtmpConfig.m */,
+				7967F5EC1F56B4B800661E61 /* HJRtmpTypes.h */,
 			);
 			path = RTMP;
 			sourceTree = "<group>";
@@ -217,6 +259,8 @@
 		79AC2E891F3DA4D80081387E /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				7967F5E31F566EFA00661E61 /* HJVideoConfig.h */,
+				7967F5E41F566EFA00661E61 /* HJVideoConfig.m */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -224,6 +268,8 @@
 		79AC2E8A1F3DA4DF0081387E /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				7967F5E01F566EEB00661E61 /* HJAudioConfig.h */,
+				7967F5E11F566EEB00661E61 /* HJAudioConfig.m */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -231,6 +277,8 @@
 		79AC2E8B1F3DA50F0081387E /* HJLiveKit */ = {
 			isa = PBXGroup;
 			children = (
+				7967F5ED1F56B81A00661E61 /* Category */,
+				7967F5DC1F566B4B00661E61 /* Manager */,
 				79AC2E8A1F3DA4DF0081387E /* Audio */,
 				79AC2E891F3DA4D80081387E /* Video */,
 				79AC2E881F3DA4CB0081387E /* RTMP */,
@@ -440,10 +488,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* HJAppDelegate.m in Sources */,
+				7967F5E51F566EFA00661E61 /* HJVideoConfig.m in Sources */,
+				7967F5DF1F566B7A00661E61 /* HJLiveManager.m in Sources */,
+				7967F5EB1F5692D000661E61 /* HJSrteamSession.m in Sources */,
 				6003F5A7195388D20070C39A /* HJViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				79AC2E8E1F3DA6170081387E /* HJRTMPSession.m in Sources */,
+				79AC2E8E1F3DA6170081387E /* HJRtmpSession.m in Sources */,
+				7967F5F01F56B8CB00661E61 /* NSMutableData+Buffer.m in Sources */,
+				7967F5E21F566EEB00661E61 /* HJAudioConfig.m in Sources */,
 				79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */,
+				7967F5E81F567E7B00661E61 /* HJRtmpConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
