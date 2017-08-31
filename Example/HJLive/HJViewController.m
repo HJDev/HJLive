@@ -44,6 +44,8 @@
 }
 
 - (IBAction)disConnect:(id)sender {
+	[self.manager end];
+	self.manager.liveStatusChangedBlock = nil;
 	self.manager = nil;
 }
 
