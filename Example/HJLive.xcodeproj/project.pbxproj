@@ -28,6 +28,7 @@
 		7967F5E81F567E7B00661E61 /* HJRtmpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5E71F567E7B00661E61 /* HJRtmpConfig.m */; };
 		7967F5EB1F5692D000661E61 /* HJSrteamSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5EA1F5692D000661E61 /* HJSrteamSession.m */; };
 		7967F5F01F56B8CB00661E61 /* NSMutableData+Buffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */; };
+		7967F5F61F57F77100661E61 /* NSURL+HJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 7967F5F51F57F77100661E61 /* NSURL+HJ.m */; };
 		79AC2E8E1F3DA6170081387E /* HJRtmpSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E8D1F3DA6170081387E /* HJRtmpSession.m */; };
 		79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AC2E901F3DA9510081387E /* HJBufferFrame.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -83,6 +84,8 @@
 		7967F5EC1F56B4B800661E61 /* HJRtmpTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJRtmpTypes.h; sourceTree = "<group>"; };
 		7967F5EE1F56B8CB00661E61 /* NSMutableData+Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+Buffer.h"; sourceTree = "<group>"; };
 		7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+Buffer.m"; sourceTree = "<group>"; };
+		7967F5F41F57F77100661E61 /* NSURL+HJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+HJ.h"; sourceTree = "<group>"; };
+		7967F5F51F57F77100661E61 /* NSURL+HJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+HJ.m"; sourceTree = "<group>"; };
 		79AC2E8C1F3DA6170081387E /* HJRtmpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJRtmpSession.h; sourceTree = "<group>"; };
 		79AC2E8D1F3DA6170081387E /* HJRtmpSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJRtmpSession.m; sourceTree = "<group>"; };
 		79AC2E8F1F3DA9510081387E /* HJBufferFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBufferFrame.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 			children = (
 				7967F5EE1F56B8CB00661E61 /* NSMutableData+Buffer.h */,
 				7967F5EF1F56B8CB00661E61 /* NSMutableData+Buffer.m */,
+				7967F5F41F57F77100661E61 /* NSURL+HJ.h */,
+				7967F5F51F57F77100661E61 /* NSURL+HJ.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -497,6 +502,7 @@
 				7967F5F01F56B8CB00661E61 /* NSMutableData+Buffer.m in Sources */,
 				7967F5E21F566EEB00661E61 /* HJAudioConfig.m in Sources */,
 				79AC2E911F3DA9510081387E /* HJBufferFrame.m in Sources */,
+				7967F5F61F57F77100661E61 /* NSURL+HJ.m in Sources */,
 				7967F5E81F567E7B00661E61 /* HJRtmpConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
