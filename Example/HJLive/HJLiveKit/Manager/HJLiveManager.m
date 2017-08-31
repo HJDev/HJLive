@@ -43,6 +43,25 @@
 	[self.rtmpSession disConnect];
 }
 
+/**
+ * 处理 rtmp 会话状态信息
+ */
+- (void)handleRtmpSessionStatus:(HJRtmpSessionStatus)status {
+	if (status == HJRtmpSessionStatusConnected) {
+		_liveStatus = HJLiveStatusConnecting;
+	} else if (status == HJRtmpSessionStatusStarted) {
+		_liveStatus = HJLiveStatusConnected;
+	} else if (status == HJRtmpSessionStatusFailed) {
+		_liveStatus = HJLiveStatusConnectFail;
+	} else if (status == HJRtmpSessionStatusNotConnected) {
+		_liveStatus = HJLiveStatusDisConnected;
+	}
+	
+	if (self.liveStatusChangedBlock) {
+		self.liveStatusChangedBlock(_liveStatus);
+	}
+}
+
 #pragma mark - lazyload
 - (HJRtmpSession *)rtmpSession {
 	if (_rtmpSession == nil) {
@@ -51,6 +70,11 @@
 		HJRtmpConfig *config = [HJRtmpConfig new];
 		config.url = self.rtmpUrl;
 		_rtmpSession.config = config;
+		HJWeakSelf;
+		[_rtmpSession setStatusChangedBlock:^(HJRtmpSessionStatus status) {
+			HJLog(@"status : %ld", status);
+			[weakSelf handleRtmpSessionStatus:status];
+		}];
 	}
 	return _rtmpSession;
 }

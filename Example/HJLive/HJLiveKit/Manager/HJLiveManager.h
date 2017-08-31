@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger, HJLiveStatus) {
 	HJLiveStatusConnecting,
 	/** 已连接 */
 	HJLiveStatusConnected,
+	/** 连接结束 */
+	HJLiveStatusDisConnected,
 	/** 连接失败 */
 	HJLiveStatusConnectFail,
 };

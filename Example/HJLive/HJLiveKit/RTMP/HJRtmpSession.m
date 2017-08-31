@@ -157,6 +157,14 @@ static const size_t kRTMPSignatureSize = 1536;
 	});
 }
 
+#pragma mark - setter
+- (void)setRtmpStatus:(HJRtmpSessionStatus)rtmpStatus {
+	_rtmpStatus = rtmpStatus;
+	if (self.statusChangedBlock) {
+		self.statusChangedBlock(rtmpStatus);
+	}
+}
+
 #pragma mark - private func
 - (void)reset {
 	_handshake = nil;
@@ -195,13 +203,13 @@ static const size_t kRTMPSignatureSize = 1536;
 	
 	if ((event & NSStreamEventOpenCompleted) == NSStreamEventOpenCompleted
 		&& _rtmpStatus < HJRtmpSessionStatusConnected) {
-		_rtmpStatus = HJRtmpSessionStatusConnected;
+		self.rtmpStatus = HJRtmpSessionStatusConnected;
 	}
 	if ((event & NSStreamEventErrorOccurred) == NSStreamEventErrorOccurred) {
-		_rtmpStatus = HJRtmpSessionStatusFailed;
+		self.rtmpStatus = HJRtmpSessionStatusFailed;
 	}
 	if ((event & NSStreamEventEndEncountered) == NSStreamEventEndEncountered) {
-		_rtmpStatus = HJRtmpSessionStatusNotConnected;
+		self.rtmpStatus = HJRtmpSessionStatusNotConnected;
 	}
 }
 
@@ -694,7 +702,7 @@ static const size_t kRTMPSignatureSize = 1536;
 		_streamSession = [HJStreamSession new];
 		HJWeakSelf;
 		[_streamSession setStreamDidChangeBlock:^(NSStreamEvent status) {
-			HJLog(@"status : %ld", status);
+//			HJLog(@"status : %ld", status);
 			[weakSelf handleStreamEvent:status];
 		}];
 	}
